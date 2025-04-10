@@ -34,6 +34,7 @@
    display: flex;
    padding: .5rem 0;
    margin-inline: auto;
+   align-items: center;
    justify-content: space-between;
 
    @media(width < 890px){
