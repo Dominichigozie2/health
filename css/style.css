@@ -1603,6 +1603,11 @@
       }
     }
 
+    @media(width < 500px){
+      .follow{
+        flex-direction: column;
+      }
+    }
     .newsletter{
       display: flex;
       gap: 1rem;
