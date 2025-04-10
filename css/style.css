@@ -411,6 +411,7 @@
    .slide-content{
      width: 100%;
      left: 0;
+     top: 1rem;
      align-items: center;
 
      h2{
@@ -439,7 +440,7 @@
  /* aboutsection */
  .about {
    display: flex;
-   padding-top: 7rem 1rem;
+   padding: 7rem 1rem;
 
    .about-container {
      display: grid;
