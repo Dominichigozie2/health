@@ -16,3 +16,16 @@ const swiper = new Swiper('.swiper-container', {
   },
   // ... Other Swiper options
 });
+
+
+function toggleDropdown() {
+  var dropDown = document.querySelector(".dropdown1");
+  dropDown.style.display = dropDown.style.display === "block" ? "none" : "block";
+}
+
+
+const menuBar = document.querySelector("#menubar");
+menuBar.addEventListener("click", () => {
+  const nav = document.querySelector(".sidebar");
+  nav.classList.toggle("show");
+});

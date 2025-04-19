@@ -82,11 +82,31 @@
         <div class="searchsign">
           <i class='bx bx-search-alt search'></i>
           <a href="contact">Get started</a>
-          <i class='bx bx-menu menuicon'></i>
+          <i class='bx bx-menu menuicon' id="menubar"></i>
         </div>
 
       </div>
     </nav>
+
+
+    <div class="sidebar">
+      <ul class="sidelist-group">
+        <li class="list-item active"><span><a href="#">Home</a></span></li>
+        <li class="list-item"><span><a
+              href="#">about</a></span></li>
+        <li class="list-item"><span><a href="#">blog</a></span></li>
+        <li class="list-item"><span onclick="toggleDropdown()"dropdownMenu>pages</span>
+          <ul class="dropdown1">
+            <li class="drop-items"><a href="#">Department</a></li>
+            <li class="drop-items"><a href="#">Doctor</a></li>
+            <li class="drop-items"><a href="#">facilities</a></li>
+            <li class="drop-items"><a href="#">Account</a></li>
+          </ul>
+        </li>
+        <li class="list-item"><span><a
+              href="#">contact</a></span></li>
+      </ul>
+    </div>
 
     <!-- the home section starts and ends -->
     <div class="swiper-container">

@@ -297,6 +297,104 @@
 
 
 
+ /* sidebar */
+ .sidebar{
+   display: none;
+   position: fixed;
+   top: 0; left: 0; 
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.514);
+   padding: 6.5rem 0 1rem;
+   z-index: 200;
+   
+   .sidelist-group{
+    background: var(--col-lit);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+    margin-inline: auto;
+    height: fit-content;
+
+    > li{
+      color: var(--col-darker);
+      font-size: 14px;
+      text-transform: capitalize;
+      cursor: pointer;
+      width: 90%;
+      padding: 1rem;
+      transition: all 340ms ease-in-out;
+      
+      a{
+        text-transform: capitalize;
+        color: var(--col-darker);
+        font-size: 14px;
+        cursor: pointer;
+      }
+      
+      .dropdown1{
+        display: none;
+        margin-top: 1rem;
+        /* width: 100%; */
+        padding: 1rem;
+        background: var(--col-liter);
+
+        
+        li{
+          color: var(--col-darker);
+          font-size: 14px;
+          text-transform: capitalize;
+          cursor: pointer;
+          /* width: 90%; */
+          padding: 1rem;
+          transition: all 340ms ease-in-out;
+          
+          a{
+            transition: all 340ms ease-in-out;
+            text-transform: capitalize;
+            color: var(--col-darker);
+            font-size: 14px;
+            cursor: pointer;
+          }
+          
+          &:hover{
+            background: var(--col-lit);
+            color: var(--secondary-col-hover);
+            a{
+              color: var(--secondary-col-hover);
+              transition: all 340ms ease-in-out;
+            }
+          }
+      }
+      }
+      
+      &:hover{
+        background: var(--col-liter);
+
+        a{
+          color: var(--secondary-col-hover);
+        }
+      }
+    }
+
+    .active{
+      background: var(--col-liter);
+      
+      a{
+        color: var(--secondary-col-hover);
+      }
+    }
+  }
+ }
+
+ .sidebar.show{
+  display: flex;
+ }
+ /* sidebar */
+
+
  /* Home pages */
 
  /* slides */
@@ -441,7 +539,7 @@
  /* aboutsection */
  .about {
    display: flex;
-   padding: 7rem 1rem;
+   padding: 7rem 1rem 0rem;
 
    .about-container {
      display: grid;
@@ -587,6 +685,11 @@
   }
  }
 
+ @media(width < 850px){
+    .about{
+      padding: 7rem 1rem;
+    }
+ }
  /* aboutsection */
 
  /* the display services */
@@ -1339,9 +1442,11 @@
         gap: 1rem;
         grid-template-columns: repeat(1,1fr);
         gap: 1rem;
+        place-items: center;
 
         .process-box {
           width: fit-content;
+          align-self: center;
         }
       }
     }
